@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background: rgb(0, 0, 0);
+   color: rgb(219, 199, 210);
+ 
+}
+nav{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 90px;
+   background-color: rgb(1, 74, 108);
+}
+nav ul{
+   display: flex;
+   justify-content: center;
+}
+nav ul li{
+   list-style: none;
+   margin: 0 23px;
+}
+nav ul li a{
+   color: rgb(255, 255, 255);
+}
+nav ul li a:hover{
+   color: rgb(174, 205, 224);
+   font-size: 15px;
+}
+.left{
+   font-size: 25px;
+}
+.firstsection{
+   display: flex;
+   justify-content: space-around;
+   margin: 110px 0;
+   align-items: center;
+  
+}
+.firstsection > div{
+   width: 30%;
+}
+.leftsection{
+   width: 34px;
+   font-size: 40px ;
+  
+}
+
+.rightsection img{
+   width: 80%;
+    animation: moveUpDown 2s ease-in-out infinite;
+
+}
+ main hr{
+   border: 0px;
+    background-color: #4c98df;
+    height: 2px;
+    margin: 60px 90px;
+}
+
+@keyframes moveUpDown {
+      0%, 100% {
+        transform: translateY(0);  
+      }
+      50% {
+        transform: translateY(-30px);  
+      }
+   }
+.purple{
+   color:rgb(67, 144, 180) ;
+}
+#element{
+   color:rgb(67, 144, 180);
+}
+.secondsection{
+   width: 80vw;
+   margin: auto;
+   height: 80vh;
+}
+.secondsection h1{
+   font-size: 35px;
+   color: #4c98df;
+}
+.text-gray{
+   color: grey;
+}
+.secondsection .box{
+   background-color: white;
+   width: 88vw;
+   height: 2px;
+   margin: 56px 0;
+}
+
+.secondsection .vertical{
+   height: 93px;
+   width: 1px;
+   background-color: white;
+}
+
