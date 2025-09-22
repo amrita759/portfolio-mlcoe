@@ -9,51 +9,59 @@
 <body>
   <header>
     <nav>
- <div class="left"> My portfolio</div>
+ <div class="left"> MY PORTFOLIO</div>
  <div class="right">
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/">Abaut</a></li>
-    <li><a href="/">Projects</a></li>
-    <li><a href="/">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
   </ul>
  </div>
   </nav>
  </header>
  <main>
+  <section id="home"></section>
   <section class="firstsection">
     <div class="leftsection">
-      HI, My name is <span class="purple"> Amrita Prajapati</span>
-      <div> I am a Passionate</div>
+      HI, My name is <span class="blue"> Amrita Prajapati</span>
+      <div> I am a Passionate Web Developer</div>
       <span id="element"></span>
     </div>
     <div class="rightsection">
-      <img src="im (1).png" alt="">
+      <img src="im (1).png" >
     </div>
     
   </section>
  <hr>
   <section class="secondsection">
-    <span class ="text-gray"> what i have done so far</span>
-    <h1> About my Self</h1>
-    <div class="box">
-        <div class="vertical"></div>
-          <div class="vertical"></div>
-            <div class="vertical"></div>
-              <div class="vertical"></div>
-      </div>
-    </div>
-
-
+     <section id="about"></section>
+   <div id ="about">
+        <div class ="row">
+          <div class="about-col-1">
+            <img src="cropped_circle_image.png" >
+          </div>
+          <div class="about-col-2">
+            <h1 class ="subtitle">About me</h1>
+            <p class="sub-1">I’m a passionate web development learner who loves building creative and user-friendly websites. Currently, I’m exploring HTML, CSS, and JavaScript while also getting familiar with responsive design.
+My goal is to sharpen my skills, contribute to real-world projects, and grow into a full-stack developer. I enjoy solving problems, learning new technologies, and turning ideas into interactive digital experiences.</p>
+                <div class="tab-title">
+                  <p class="tab-links">Skills</p>
+                </div>
+                <div class="tab-contents">
+                  <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>web developer</span><br>web app developer</li>
+                    <li><span>app developer</span><br>building android/ios apps</li>
+                  </ul>
+                </div>
+          </div>
+        </div>
+       </div>
+   
   </section>
  </main>
- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Web Designer','Graphic Designer'],
-      typeSpeed: 50,
-    });
-  </script>
+
 </body>
 </html>
 
