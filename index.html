@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/14e53caf7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -13,9 +14,9 @@
  <div class="right">
   <ul>
     <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#about">About me</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
  </div>
   </nav>
@@ -46,19 +47,101 @@
             <p class="sub-1">I’m a passionate web development learner who loves building creative and user-friendly websites. Currently, I’m exploring HTML, CSS, and JavaScript while also getting familiar with responsive design.
 My goal is to sharpen my skills, contribute to real-world projects, and grow into a full-stack developer. I enjoy solving problems, learning new technologies, and turning ideas into interactive digital experiences.</p>
                 <div class="tab-title">
-                  <p class="tab-links">Skills</p>
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents active-tab" id="skills">
                   <ul>
                     <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                     <li><span>web developer</span><br>web app developer</li>
                     <li><span>app developer</span><br>building android/ios apps</li>
                   </ul>
                 </div>
+                 <div class="tab-contents" id="education">
+                  <ul>
+                    <li><span>Intermediate</span><br>Ryan International School,Shajahanpur</li>
+                    <li><span>Student At</span><br>AKGEC, Ghaziabad</li>
+                  </ul>
+                </div>
           </div>
         </div>
        </div>
+ <hr>
+<div id="services">
+  <div class="container">
+   <h1 class="sub-title">My Services</h1>
+   <div class="services-list">
+
+   <div>
+    <h2>Web Development</h2>
+    <p>I create responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+    <a href="#">Read More</a>
+   </div>
+
+     <div>
+    <h2>Web Designing</h2>
+    <p>“I’m a web design learner who loves creating simple, modern, and user-friendly websites using HTML, CSS, and JavaScript.</p>
+    <a href="#">Read More</a>
+   </div>
+
+  <div>
+    <h2>UI/UX</h2>
+    <p>“I’m learning UI/UX design to create digital experiences that are not only visually appealing but also easy and enjoyable to use.</p>
+    <a href="#">Read More</a>
+   </div>
+
+   </div>
+  </div>
+</div>
+ <hr>
+<div id="contact">
+  <div class="container-con">
+    <div class ="row-con">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>@amritaprajapati@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+91 8299224874</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/_amrita.prajapati20_/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/amrita-prajapati-4467a4344/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/amrita759"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="contact-right"></div>
+      <form>
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <input type="text" name="Subject" placeholder="Subject" required>
+        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Designer','Graphic Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+
+  <script>
    
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){ 
+      for(tablink of tablinks){
+        tabcontent.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+  }
+    
+  </script>
   </section>
  </main>
 
