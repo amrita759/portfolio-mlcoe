@@ -73,18 +73,21 @@ My goal is to sharpen my skills, contribute to real-world projects, and grow int
    <div class="services-list">
 
    <div>
+    <i class="fa-solid fa-code"></i>
     <h2>Web Development</h2>
     <p>I create responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
     <a href="#">Read More</a>
    </div>
 
      <div>
+      <i class="fa-solid fa-crop-simple"></i>
     <h2>Web Designing</h2>
     <p>“I’m a web design learner who loves creating simple, modern, and user-friendly websites using HTML, CSS, and JavaScript.</p>
     <a href="#">Read More</a>
    </div>
 
   <div>
+    <i class="fa-brands fa-app-store"></i>
     <h2>UI/UX</h2>
     <p>“I’m learning UI/UX design to create digital experiences that are not only visually appealing but also easy and enjoyable to use.</p>
     <a href="#">Read More</a>
@@ -127,22 +130,27 @@ My goal is to sharpen my skills, contribute to real-world projects, and grow int
     });
   </script>
 
-  <script>
+ 
+  </section>
+
+ <script>
    
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
 
-      function opentab(tabname){ 
+      function opentab(tabname){  
       for(tablink of tablinks){
-        tabcontent.classList.remove("active-link");
+        tablink.classList.remove("active-link");
       }
       for(tabcontent of tabcontents){
         tabcontent.classList.remove("active-tab");
       }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
   }
     
   </script>
-  </section>
+
  </main>
 
 </body>
